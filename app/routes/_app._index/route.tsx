@@ -11,7 +11,7 @@ export default function Home() {
         <section className="container justify-between gap-20 items-center md:flex">
           <div className="text-start md:text-start">
             <h1 className="text-4xl text-gray-800 text-start font-extrabold lg:text-6xl md:text-start mt-3 tracking-tight z-10">
-              Leveraging technology to empower your business<span className="font-black text-primary-theme">.</span>
+              Leveraging technology to empower your business <span className="text-5xl text-primary-theme animate-caret-blink">|</span>
             </h1>
 
             <section className="flex flex-col text-muted-foreground gap-5 mb-10 mt-5">
@@ -51,7 +51,7 @@ export default function Home() {
           <div className="flex md:flex-row flex-col items-center justify-between gap-10 mb-20">
             <div>
               <h2 className="text-4xl font-semibold pb-5 text-gray-800">
-                Our Mission<span className="text-primary-theme font-black">.</span>
+                Our Mission<span className="text-primary-theme font-black text-5xl animate-bounce inline-block">.</span>
               </h2>
               <p className="text-base text-gray-700">
                 To provide innovative and strategic IT services aimed at availing our clients with total IT solutions to enable them achieve their business
