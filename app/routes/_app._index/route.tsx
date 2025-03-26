@@ -1,6 +1,5 @@
 import { Blocks, ClockArrowUp, Earth, Handshake, Settings, Users } from "lucide-react";
 import { Link } from "react-router";
-import Badge from "~/components/utility/badge";
 import { BrMd } from "~/components/utility/line-break";
 import { PROJECTS } from "./projects";
 import ProjectCard from "./project-card";
@@ -11,8 +10,8 @@ export default function Home() {
       <header className="lg:pt-16 pb-10 pt-[4rem] h-[70vh] bg-slate-100 flex justify-center flex-col">
         <section className="container justify-between gap-20 items-center md:flex">
           <div className="text-start md:text-start">
-            <h1 className="text-4xl text-primary text-start font-extrabold lg:text-5xl md:text-start mt-3 tracking-tight z-10">
-              Leveraging technology to empower your business.
+            <h1 className="text-4xl text-gray-800 text-start font-extrabold lg:text-6xl md:text-start mt-3 tracking-tight z-10">
+              Leveraging technology to empower your business<span className="font-black text-primary-theme">.</span>
             </h1>
 
             <section className="flex flex-col text-muted-foreground gap-5 mb-10 mt-5">
@@ -23,14 +22,14 @@ export default function Home() {
             </section>
 
             <div className="flex flex-col gap-5 items-center md:flex-row z-10">
-              <Link to="/register" className="bg-[#F19E4B] rounded-md shadow-md text-white text-center text-sm w-full block font-medium uppercase hover:bg-gray-800 md:inline-block md:w-max px-10 py-2.5 transition">
+              <Link to="/register" className="bg-[#F19E4B] shadow-md text-white text-center text-sm w-full block font-medium uppercase hover:bg-gray-800 md:inline-block md:w-max px-10 py-2.5 transition">
                 Book a meeting
               </Link>
               <a
                 rel="noopener"
                 href="https://youtu.be/hBDECFvIk8w?si=G_1qfFhyCYJWwVv8"
                 target="_blank"
-                className="rounded-md text-[#F19E4B] border border-[#F19E4B] text-center text-sm w-full block font-bold hover:shadow-lg md:inline-block md:w-max px-10 py-2.5 transition"
+                className="text-[#F19E4B] border border-[#F19E4B] text-center text-sm w-full block font-bold hover:shadow-lg md:inline-block md:w-max px-10 py-2.5 transition"
               >
                 See portfolio
               </a>
@@ -49,48 +48,48 @@ export default function Home() {
 
       <main>
         <section className="my-20 container">
-          <div className="flex items-center justify-between gap-10 mb-20">
+          <div className="flex md:flex-row flex-col items-center justify-between gap-10 mb-20">
             <div>
-              <h2 className="text-4xl font-semibold pb-5">
+              <h2 className="text-4xl font-semibold pb-5 text-gray-800">
                 Our Mission<span className="text-primary-theme font-black">.</span>
               </h2>
-              <p className="text-base">
+              <p className="text-base text-gray-700">
                 To provide innovative and strategic IT services aimed at availing our clients with total IT solutions to enable them achieve their business
                 objectives and gain a competitive edge in today’s business environment.
               </p>
             </div>
 
-            <div className="flex items-stretch gap-3 px-5">
-              <div className="rounded-lg py-10 px-5 border border-gray-200 relative">
-                <div className="absolute -top-16 right-0 opacity-30">
+            <div className="flex md:flex-row flex-col items-stretch gap-3">
+              <div className="rounded-lg py-12 px-5 border border-gray-200 relative overflow-hidden">
+                <div className="absolute -top-10 right-0 opacity-30 bg-gray-100">
                   <Blocks className="h-36 w-36 text-primary-theme" strokeWidth={1} />
                 </div>
-                <h3 className="font-bold pb-3">What we build</h3>
-                <p>
+                <h3 className="font-bold pb-3 text-gray-800">What we build</h3>
+                <p className="text-gray-700">
                   A suite of applications designed with usability goals in mind that focus on business process automation.
                 </p>
               </div>
-              <div className="rounded-lg py-10 px-5 border border-gray-200 relative">
-                <div className="absolute -top-16 right-0 opacity-30">
+              <div className="rounded-lg py-12 px-5 border border-gray-200 relative overflow-hidden">
+                <div className="absolute -top-10 right-0 opacity-30">
                   <Handshake className="h-36 w-36 text-primary-theme" strokeWidth={1} />
                 </div>
-                <h3 className="font-bold pb-3">What we do</h3>
-                <p>
+                <h3 className="font-bold pb-3 text-gray-800">What we do</h3>
+                <p className="text-gray-700">
                   Our service offerings range from consultancy to software development / customization and biometric verification.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="py-20">
+          <div className="pb-20 pt-10">
             <div>
-              <h2 className="font-bold pb-7 text-5xl text-center">
+              <h2 className="font-bold pb-7 text-5xl md:text-center text-gray-800">
                 We create products that <BrMd />
                 <span className="text-primary-theme">shape our future</span>.
               </h2>
             </div>
 
-            <div className="flex gap-5 items-stretch my-7">
+            <div className="flex md:flex-row flex-col gap-5 items-stretch my-7">
               <div className="flex basis-1/3 rounded-xl p-5 flex-col gap-9 bg-secondary-theme">
                 <div className="bg-primary-theme rounded-xl p-3 text-white inline-block w-max">
                   <Users className="w-8 h-8 fill-white" />
@@ -122,7 +121,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex gap-5 items-stretch my-7">
+            <div className="flex md:flex-row flex-col gap-5 items-stretch my-7">
               <div className="flex basis-2/3 rounded-xl p-5 flex-col gap-9 bg-secondary-theme">
                 <div className="bg-primary-theme rounded-xl p-3 text-white inline-block w-max">
                   <Settings className="w-8 h-8" />
@@ -152,7 +151,7 @@ export default function Home() {
 
           <div>
             <div>
-              <h2 className="font-bold pb-7 text-5xl text-center">
+              <h2 className="font-bold pb-7 text-5xl md:text-center">
                 We create products that <BrMd />
                 <span className="text-primary-theme">shape our future</span>.
               </h2>

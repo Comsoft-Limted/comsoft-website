@@ -30,14 +30,14 @@ export default function DefaultLayout() {
             <div className="container -translate-x-1/2 fixed left-1/2 px-4 top-4 transform z-50">
                 {/* Navbar */}
                 <nav
-                    className={`transition-all duration-300 ease-in-out ${scrolled ? "bg-white/80 backdrop-blur shadow-[0_5px_35px_rgba(0,0,0,0.1)] py-2 px-3" : "bg-transparent py-0"
-                        } border-gray-200 rounded-2xl flex justify-between items-center gap-2`}
+                    className={`transition-all duration-300 ease-in-out ${scrolled ? "bg-white/80 backdrop-blur shadow-[0_5px_35px_rgba(0,0,0,0.1)] py-3 px-3" : "bg-transparent py-0"
+                        } border-gray-200 flex justify-between items-center gap-2`}
                 >
                     <section className="flex items-center gap-4">
                         <div className="flex gap-2 items-center">
                             {/* <img src="/images/logos/logo.png" alt="logo" width={38} /> */}
                             <Link to="/" className="text-primary font-bold md:text-lg">
-                                <span>Comsoft</span> <span className="font-light">limited</span>
+                                <span>Comsoft</span> <span className="font-light text-xs">LTD</span>
                             </Link>
                         </div>
 
@@ -83,8 +83,17 @@ export default function DefaultLayout() {
             </div>
             <Outlet />
             <footer>
-                <div className="bg-slate-100 py-5 border-t">
+                <div className="bg-gray-50 py-5">
                     <div className="container">
+                        <div className="max-w-2xl mb-20">
+                            <h6 className="text-xl font-medium pb-4">
+                                Comsoft Limited
+                            </h6>
+                            <p className="text-gray-600 text-sm">
+                                Comsoft Limited has a track record of successes and growth spanning more than 20 years.
+                                Comsoft Limited has and continues to provide successful Information Technology (IT) solutions to government and private sector clients across Africa.
+                            </p>
+                        </div>
                         <div className="text-muted-foreground text-sm">
                             <span>&copy; 2021 Comsoft limited</span>
                         </div>
