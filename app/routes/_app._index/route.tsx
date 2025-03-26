@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <header className="lg:pt-16 pb-10 pt-[4rem] h-[70vh] bg-slate-100 flex justify-center flex-col">
         <section className="container justify-between gap-20 items-center md:flex">
-          <div className="text-start md:text-start">
+          <div className="text-start flex-1 md:text-start">
             <h1 className="text-4xl text-gray-800 text-start font-extrabold lg:text-6xl md:text-start mt-3 tracking-tight z-10">
               Leveraging technology to empower your business <span className="text-5xl text-primary-theme animate-caret-blink">|</span>
             </h1>
@@ -38,9 +38,9 @@ export default function Home() {
           </div>
           <div className="flex-1 hidden md:block me-14">
             <img
-              src="/images/personalised.png"
-              alt="Join OwenaHub"
-              className="h-[440px]pointer-events-none w-[440px] block mx-auto"
+              src="/images/atf-banner.svg"
+              alt="..."
+              className="h-[440px] pointer-events-none w-auto mx-auto"
             />
           </div>
         </section>
