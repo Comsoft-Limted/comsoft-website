@@ -69,23 +69,22 @@ export function Navigation() {
                                     >
                                         <ChevronDown className="h-6 w-6" />
                                         <div className="mb-2 mt-4 text-lg font-medium">
-                                            shadcn/ui
+                                            Comsoft Limited
                                         </div>
                                         <p className="text-sm leading-tight text-muted-foreground">
-                                            Beautifully designed components built with Radix UI and
-                                            Tailwind CSS.
+                                            Providing successful solutions to government and private sector clients across Africa.
                                         </p>
                                     </a>
                                 </NavigationMenuLink>
                             </li>
-                            <ListItem href="/docs" title="Introduction">
-                                Re-usable components built using Radix UI and Tailwind CSS.
+                            <ListItem href="/docs" title="CABSOL Payroll">
+                                A comprehensive financial solution that supports charts of accounts,transactions, payroll and payment integration.
                             </ListItem>
-                            <ListItem href="/docs/installation" title="Installation">
-                                How to install dependencies and structure your app.
+                            <ListItem href="/docs/installation" title="CABSOL INMS">
+                                Customized inventory system for procurement, real-time tracking of products and stock keeping.
                             </ListItem>
-                            <ListItem href="/docs/primitives/typography" title="Typography">
-                                Styles for headings, paragraphs, lists...etc
+                            <ListItem href="/docs/primitives/typography" title="CABSOL AFMS">
+                                A comprehensive financial solution that supports charts of accounts,transactions, payroll and payment integration.
                             </ListItem>
                         </ul>
                     </NavigationMenuContent>

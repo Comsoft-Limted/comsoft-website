@@ -160,12 +160,25 @@ export default function Home() {
             <div className="grid gap-4 grid-cols-1 md:grid-cols-3 items-stretch">
               {PROJECTS.map((project) => (
                 <ProjectCard
+                  key={project.name}
                   name={project.name}
                   tags={project.tags}
                   image={project.image}
                 />
               ))}
             </div>
+          </div>
+        </section>
+        <section className="bg-primary-theme py-30">
+          <div className="container md:text-center">
+            <h4 className="font-semibold text-3xl md:text-5xl mb-10 leading-tight">
+              Capture every moment, idea, and <BrMd />
+              insight with AI meeting tools
+            </h4>
+            <p className="text-base md:text-xl font-light">
+              Capture, organize and enhance every meeting and AI-powered <BrMd />
+              insights at your fingertips.
+            </p>
           </div>
         </section>
       </main>

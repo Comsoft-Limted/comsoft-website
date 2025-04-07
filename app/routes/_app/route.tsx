@@ -30,7 +30,7 @@ export default function DefaultLayout() {
             <div className="container -translate-x-1/2 fixed left-1/2 px-4 top-4 transform z-50">
                 {/* Navbar */}
                 <nav
-                    className={`transition-all duration-300 ease-in-out ${scrolled ? "bg-white/80 backdrop-blur shadow-[0_5px_35px_rgba(0,0,0,0.1)] py-3 px-3" : "bg-transparent py-0"
+                    className={`transition-all duration-300 ease-in-out ${scrolled ? "bg-white/80 backdrop-blur shadow-[0_5px_20px_rgba(0,0,0,0.1)] py-3 px-3" : "bg-transparent py-0"
                         } border-gray-200 flex justify-between items-center gap-2`}
                 >
                     <section className="flex items-center gap-4">
@@ -81,9 +81,11 @@ export default function DefaultLayout() {
                     </div>
                 )}
             </div>
-            <Outlet />
+            <div className={`${busy && "opacity-50"} transition-all`}>
+                <Outlet />
+            </div>
             <footer>
-                <div className="bg-gray-50 py-5">
+                <div className="bg-gray-50 py-10">
                     <div className="container">
                         <div className="max-w-2xl mb-20">
                             <h6 className="text-xl font-medium pb-4">
@@ -95,7 +97,7 @@ export default function DefaultLayout() {
                             </p>
                         </div>
                         <div className="text-muted-foreground text-sm">
-                            <span>&copy; 2021 Comsoft limited</span>
+                            <span>&copy; 1996 - {new Date().getFullYear()} Comsoft limited</span>
                         </div>
                     </div>
                 </div>
