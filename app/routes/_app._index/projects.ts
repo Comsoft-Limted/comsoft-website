@@ -1,33 +1,33 @@
 export const PROJECTS = [
     {
         name: "CABSOL Inventory Management Solution (INMS)",
-        tags: ["Angular", "Java", "SpringBoot", "AWS"],
+        tags: ["Management", "ERP Software", "Inventory management"],
         image: "/projects/image.png"
     },
-    
+
     {
         name: "CABSOL Accounting and Financial Management Solution (AFMS)",
-        tags: ["Angular", "Java", "SpringBoot", "AWS"],
+        tags: ["Accounting", "Management Software", "Finances", "ERP Software"],
         image: "/projects/image.png"
     },
     {
         name: "CABSOL Fixed Assets Tracking and Management Solution (ATMS)",
-        tags: ["Remix", "UI/UX", "SpringBoot", "AWS"],
+        tags: ["Finances", "Assets", "Management Software"],
         image: "/projects/image.png"
     },
     {
         name: "CABSOL Payroll",
-        tags: ["Angular", "Java", "SpringBoot", "AWS"],
+        tags: ["Staff", "Management", "Finances", "ERP Software"],
         image: "/projects/image.png"
     },
     {
         name: "Agric Resources",
-        tags: ["Angular", "SpringBoot", "AWS"],
+        tags: ["Agriculture", "National", "Resource management"],
         image: "/projects/image.png"
     },
     {
         name: "CABSOL Document Archiving and Retrieval Solution (DARS)",
-        tags: ["Angular", "Java", "SpringBoot", "AWS"],
+        tags: ["Document management", "ERP"],
         image: "/projects/image.png"
     },
 

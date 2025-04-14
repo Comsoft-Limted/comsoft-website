@@ -106,7 +106,7 @@ export function Navigation() {
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link to="/docs">
+                    <Link to="/about-us">
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                             About Us
                         </NavigationMenuLink>

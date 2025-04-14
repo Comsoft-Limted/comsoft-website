@@ -6,7 +6,7 @@ import ProjectCard from "./project-card";
 
 export default function Home() {
   return (
-    <>
+    <div className="animated fadeIn">
       <header className="lg:pt-16 pb-10 pt-[4rem] h-[70vh] bg-slate-100 flex justify-center flex-col">
         <section className="container justify-between gap-20 items-center md:flex">
           <div className="text-start flex-1 md:text-start">
@@ -22,14 +22,14 @@ export default function Home() {
             </section>
 
             <div className="flex flex-col gap-5 items-center md:flex-row z-10">
-              <Link to="/register" className="bg-[#F19E4B] shadow-md text-white text-center text-sm w-full block font-medium uppercase hover:bg-gray-800 md:inline-block md:w-max px-10 py-2.5 transition">
+              <Link to="/register" className="bg-[#F19E4B] text-white text-center text-sm w-full block font-medium uppercase hover:bg-gray-800 md:inline-block md:w-max px-10 py-4 transition">
                 Book a meeting
               </Link>
               <a
                 rel="noopener"
                 href="https://youtu.be/hBDECFvIk8w?si=G_1qfFhyCYJWwVv8"
                 target="_blank"
-                className="text-[#F19E4B] border border-[#F19E4B] text-center text-sm w-full block font-bold hover:shadow-lg md:inline-block md:w-max px-10 py-2.5 transition"
+                className="text-[#F19E4B] border border-[#F19E4B] text-center text-sm w-full block font-bold hover:shadow-lg md:inline-block md:w-max px-10 py-4 transition"
               >
                 See portfolio
               </a>
@@ -151,7 +151,7 @@ export default function Home() {
 
           <div>
             <div>
-              <h2 className="font-bold pb-7 text-5xl md:text-center">
+              <h2 className="font-bold pb-18 text-5xl md:text-center">
                 We create products that <BrMd />
                 <span className="text-primary-theme">shape our future</span>.
               </h2>
@@ -171,7 +171,7 @@ export default function Home() {
         </section>
         <section className="bg-primary-theme py-30">
           <div className="container md:text-center">
-            <h4 className="font-semibold text-3xl md:text-5xl mb-10 leading-tight">
+            <h4 className="font-bold text-white text-3xl md:text-6xl mb-10 leading-tight">
               Capture every moment, idea, and <BrMd />
               insight with AI meeting tools
             </h4>
@@ -183,6 +183,6 @@ export default function Home() {
         </section>
       </main>
 
-    </>
+    </div>
   )
 }
