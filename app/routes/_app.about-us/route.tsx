@@ -28,7 +28,7 @@ export default function AboutUs() {
                 </section>
 
                 <section className="container justify-between gap-1 items-stretch md:flex">
-                    <div className="flex flex-row gap-1 flex-1 items-stretch md:flex-row z-10">
+                    <div className="flex flex-col gap-1 flex-1 items-stretch md:flex-row z-10">
                         <div className="py-5 px-10 bg-secondary-theme flex-1 flex flex-col justify-center gap-2">
                             <span className="text-sm font-bold uppercase text-primary-theme">since</span>
                             <div className='font-extrabold text-7xl text-primary-theme'>1996</div>
@@ -51,13 +51,13 @@ export default function AboutUs() {
                 </section>
             </div>
 
-            <section className="container flex gap-20 mt-20 relative">
-                <h2 className="text-6xl font-bold flex-1/3">
-                    What defines Comsoft<span className="font-black text-primary-theme text-7xl">.</span>
+            <section className="container md:flex gap-20 mt-20 relative">
+                <h2 className="text-4xl md:text-6xl font-bold flex-1/3 mb-10">
+                    What defines Comsoft<span className="font-black text-primary-theme md:text-7xl">.</span>
                 </h2>
 
                 <div className="flex-2/3 flex flex-col">
-                    <div className="flex flex-3/5 gap-1 pb-10 border-b-2 border-dashed">
+                    <div className="md:flex flex-3/5 gap-1 pb-10 border-b-2 border-dashed">
                         <div className="flex-1/5 text-2xl font-extrabold hover:text-primary-theme transition">
                             ICT Consulting
                         </div>
@@ -66,7 +66,7 @@ export default function AboutUs() {
                             Website Design and Hosting, Software Development, System Automations, Maintenance, and Corporate ICT Training.
                         </div>
                     </div>
-                    <div className="flex flex-3/5 gap-1 py-10 border-b-2 border-dashed">
+                    <div className="md:flex flex-3/5 gap-1 py-10 border-b-2 border-dashed">
                         <div className="flex-1/5 text-2xl font-extrabold hover:text-primary-theme transition">
                             Project Based Services
                         </div>
@@ -75,7 +75,7 @@ export default function AboutUs() {
                             project consulting offers our clients a way to harness our specific qualities and use our expertise to solve specific problems, develop and/or implement plans, and develop specific information systems.
                         </div>
                     </div>
-                    <div className="flex flex-3/5 gap-1 py-10 border-b-2 border-dashed">
+                    <div className="md:flex flex-3/5 gap-1 py-10 border-b-2 border-dashed">
                         <div className="flex-1/5 text-2xl font-extrabold hover:text-primary-theme transition">
                             Technical Aid
                         </div>
@@ -84,7 +84,7 @@ export default function AboutUs() {
                             non-emergency technical assistance. Give professional consultancy on Information Technology and project management.
                         </div>
                     </div>
-                    <div className="flex flex-3/5 gap-1 py-10 border-b-2 border-dashed">
+                    <div className="md:flex flex-3/5 gap-1 py-10 border-b-2 border-dashed">
                         <div className="flex-1/5 text-2xl font-extrabold hover:text-primary-theme transition">
                             Biometric Authentication Services
                         </div>
@@ -93,7 +93,7 @@ export default function AboutUs() {
                             fingerprint identification for high security environment and Automatic Biometric Identification System (ABIS) for fingerprint identification.\
                         </div>
                     </div>
-                    <div className="flex flex-3/5 gap-1 py-10 border-b-2 border-dashed">
+                    <div className="md:flex flex-3/5 gap-1 py-10 border-b-2 border-dashed">
                         <div className="flex-1/5 text-2xl font-extrabold hover:text-primary-theme transition">
                             IT Training
                         </div>
@@ -103,7 +103,7 @@ export default function AboutUs() {
                         </div>
                     </div>
                 </div>
-                <MousePointerClick strokeWidth={1} className="absolute text-primary-theme text-9xl h-50 w-50 bottom-50" />
+                <MousePointerClick strokeWidth={1} className="absolute text-primary-theme text-9xl h-50 w-50 md right-10 md:left-0 bottom-50 -z-10 opacity-20 md:opacity-100" />
             </section>
         </div>
     )
